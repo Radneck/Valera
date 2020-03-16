@@ -1,0 +1,49 @@
+.navbar
+	&-block
+		display: flex
+		justify-content: space-between
+		align-items: center
+		background-color: #ff7f00
+
+	&__logo
+		display: flex
+		padding-top: 5px
+		padding-bottom: 5px
+		margin-left: 40px
+		width: 200px
+	&__info
+		display: flex
+		margin-right: 40px
+		align-items: center
+	&__contacts
+		margin-right: 20px
+		display: flex
+		align-items: flex-end
+		flex-direction: column
+	&__address
+		font-size: 12px
+		margin-bottom: 5px
+	&__phone
+		text-decoration: none
+		color: white
+		font-size: 14px
+@media ( max-width:  700px)
+	.navbar
+		&__address
+			display: none
+@media ( max-width:  585px)
+	.navbar
+		&__contacts
+			display: none
+@media ( max-width:  445px)
+	.navbar
+		&__logo
+			margin-left: 20px
+		&__info
+			margin-right: 20px
+		&__button
+			font-size: 12px
+@media ( max-width:  427px)
+	.navbar
+		&__button
+			padding: 5px 10px
