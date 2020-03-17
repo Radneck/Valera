@@ -45,6 +45,8 @@ img {
       -ms-flex-align: center;
           align-items: center;
   background-color: #ff7f00;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .navbar__logo {
@@ -120,5 +122,47 @@ img {
   .navbar__button {
     padding: 5px 10px;
   }
+}
+
+.about-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 80px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #5F9EA0;
+  height: 446px;
+}
+
+.about .price {
+  width: 500px;
+  margin-left: 35px;
+}
+
+.about .price caption {
+  margin-left: 2px;
+  margin-right: 1px;
+  line-height: 30px;
+  background-color: #ff7f00;
+  color: black;
+}
+
+.about .price__head {
+  color: black;
+  background-color: #ff7f00;
+  padding: 30px;
+}
+
+.about .price__item {
+  color: white;
+  background-color: #ff7f00;
+  padding: 30px;
 }
 /*# sourceMappingURL=style_valera.css.map */
