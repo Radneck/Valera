@@ -4,22 +4,82 @@
 		justify-content: space-between
 		align-items: center
 		box-shadow: 0 0 10px rgba(0,0,0,0.5)
-		background-color: #5F9EA0
-		height: 446px
+		height: 446px	
 	.price
-		width: 500px
-		margin-left: 35px
-		caption
-			margin-left: 2px
-			margin-right: 1px
-			line-height: 30px
-			background-color: #ff7f00
-			color: black
+		max-width: 585px
+		width: 100%
+		height: 100%
+		background-color: #05951d63
+		display: flex
+		align-items: center
+		&-list
+			max-width: 500px
+			width: 100%
+			height: 80%
+			margin-left: 35px
+			margin-right: 35px
+			padding-bottom: 25px
 		&__head
-			color: black
-			background-color: #ff7f00
-			padding: 30px
-		&__item
 			color: white
-			background-color: #ff7f00
+			background-color: $price-color
 			padding: 30px
+			text-align: center
+		td
+			text-align: center	
+				// padding: 0
+			background-color: $price-color
+			caption
+				margin-top: 20px
+				margin-bottom: 20px
+				line-height: 30px
+				background-color: $price-color
+				color: black
+	.map
+		width: 50%
+		height: 446px
+	@media ( max-width:  875px)
+		.about
+			&-block
+				flex-direction: column
+		.price
+			max-width: 875px
+			width: 100%
+			&-list
+				max-width: 875px
+				width: 100%
+		.map
+			margin-top: 20px
+			width: 100%
+			height: 223px
+
+	
+
+	@media ( max-width:  585px)
+		.price
+			width: 100%
+			&-list
+				width: 85%
+	@media ( max-width:  480px)
+		.price
+			width: 100%
+			&-list
+				width: 70%
+	@media ( max-width:  450px)
+		.price
+			width: 100%
+			&-list
+				width: 80%
+				font-size: 12px
+			&__head
+				padding: 5px
+
+
+		
+
+	
+	
+
+
+
+
+// background-color: #4984f1c7

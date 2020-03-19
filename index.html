@@ -10,7 +10,7 @@
 </head>
 <body>
 	<header class="navbar">
-		<div class="container">
+		<div class="my_container">
 			<div class="navbar-block">
 
 				<div class="navbar__logo">
@@ -28,60 +28,88 @@
 			</div>
 		</div>
 	</header>
+
+	<section class="quote">
+		<div class="my_container">
+			<blockquote class="quote-block">
+				<p class="quote__item">Валера, настало твое время!</p>
+				<footer class="quote__footer">— <cite>Павлик</cite></footer>
+			</blockquote>
+		</div>
+	</section>
+
 	<section class="about">
-		<div class="container">
+		<div class="my_container">
 			<div class="about-block">
 
-				<div class="price-list">
-					<table class="price">
+				<div class="price">
+
+					<table class="price-list">
 						<caption>Тарифы для МСК и МО</caption>
 						<thead>
 							<tr>
-								<th class="price__head">Автомобиль</th>
-								<th class="price__head">Погрузка</th>
-								<th class="price__head">Цена за 1 км</th>
+								<td class="price__head">Автомобиль</td>
+								<td class="price__head">Погрузка</td>
+								<td class="price__head">Цена за 1 км</td>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<th class="price__item">Внедорожник</th>
-								<td class="price__item">2000 рублей</td>
-								<td class="price__item">40 рублей</td>
+								<td>Внедорожник</td>
+								<td>2000 &#8381;</td>
+								<td>40 &#8381;/км</td>
 							</tr>
 							<tr>
-								<th class="price__item">Легковой</th>
-								<td class="price__item">1500 рублей</td>
-								<td class="price__item">30 рублей</td>
+								<td>Легковой</td>
+								<td>1500 &#8381;</td>
+								<td>30 &#8381;/км</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
-				
-				
-				<!-- <ul class="price-list">
-					<li class="price">Эвакуация легковых автомобилей: 1500 на 30 км</li>
-					<li class="price">Эвакуация джипов: 2000 на 40 км</li>
-				</ul> -->
-	
 				<div class="map">
-					<iframe
-						src="https://yandex.ru/map-widget/v1/?um=constructor%3A9db8809e95337a6fb477088687a3dd39d3f511cec59371128f0403b9b998a5aa&amp;source=constructor"
-						width="604" height="446" frameborder="0">
-					</iframe>
+					<script type="text/javascript" charset="utf-8" async
+						src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9db8809e95337a6fb477088687a3dd39d3f511cec59371128f0403b9b998a5aa&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false">
+						</script>
 				</div>
 			</div>
 		</div>
+		
 
 	</section>
 
-	<!-- <section class="foto">
-		<article class="foto-list">
-			<img src="./img/Tru/1.jpeg" alt="Случаи из жизни">
-		</article>
-	</section> -->
-	
-	<!-- <footer class="footer">
+	<section class="quote">
+		<div class="my_container">
+			<blockquote class="quote-block">
+				<p class="quote__item">Приду на помощь 24/7</p>
+				<footer class="quote__footer">— <cite>Валера</cite></footer>
+			</blockquote>
+		</div>
+	</section>
 
-	</footer> -->
+
+	<section class="foto">
+		<div class="my_container">
+			<article class="foto-list">
+				<img class="foto__item" src="./img/Tru/1.jpeg" alt="Случаи из жизни">
+				<img class="foto__item" src="./img/Tru/4.jpeg" alt="Случаи из жизни">
+				<img class="foto__item" src="./img/Tru/3.jpeg" alt="Случаи из жизни">
+				<img class="foto__item" src="./img/Tru/2.jpeg" alt="Случаи из жизни">
+				<img class="foto__item"src="./img/Tru/5.jpeg" alt="Случаи из жизни">
+			</article>
+		</div>
+	</section>
+	
+	<footer class="footer">
+		<div class="my_container">
+			<div class="footer-block">
+				<p>© Valeras site | Images: Valera | Design: Ognyana Biryuza</p>
+				<!-- <div class="footer__logo">
+					<img src="./img/Logo_gazzelle_nobg.png" alt="Логотип">
+				</div> -->
+			</div>
+
+		</div>
+	</footer>
 </body>
 </html>

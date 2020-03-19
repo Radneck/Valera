@@ -1,10 +1,10 @@
 .navbar
+	background-color: $navbar-color
+	box-shadow: 0 0 10px rgba(0,0,0,0.5)
 	&-block
 		display: flex
 		justify-content: space-between
 		align-items: center
-		background-color: #ff7f00
-		box-shadow: 0 0 10px rgba(0,0,0,0.5)
 
 	&__logo
 		display: flex
@@ -22,13 +22,13 @@
 		align-items: flex-end
 		flex-direction: column
 	&__address
-		font-size: 12px
+		font-size: 16px
 		margin-bottom: 5px
 	&__phone
 		text-decoration: none
 		color: white
-		font-size: 14px
-@media ( max-width:  700px)
+		font-size: 16px
+@media ( max-width:  768px)
 	.navbar
 		&__address
 			display: none
