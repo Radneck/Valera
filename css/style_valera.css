@@ -31,7 +31,9 @@ img {
   color: white;
   border: none;
   font-size: 16px;
+  font-family: 'Lato', sans-serif;
   padding: 10px 15px;
+  outline: none;
 }
 
 .navbar {
@@ -58,7 +60,6 @@ img {
   display: flex;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin-left: 40px;
   width: 200px;
 }
 
@@ -66,17 +67,18 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 40px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .navbar__contacts {
-  margin-right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -89,23 +91,42 @@ img {
 .navbar__address {
   font-size: 16px;
   margin-bottom: 5px;
+  font-family: 'Lato', sans-serif;
+}
+
+.navbar__phone:nth-child(1) {
+  padding-right: 30px;
 }
 
 .navbar__phone {
   text-decoration: none;
   color: white;
   font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+@media (max-width: 960px) {
+  .navbar__logo {
+    margin-left: 20px;
+  }
 }
 
 @media (max-width: 768px) {
+  .navbar__logo {
+    width: 20%;
+  }
   .navbar__address {
     display: none;
   }
 }
 
-@media (max-width: 585px) {
-  .navbar__contacts {
-    display: none;
+@media (max-width: 545px) {
+  .navbar__phone {
+    font-size: 14px;
+  }
+  .navbar__button {
+    padding: 5px 5px;
+    font-size: 14px;
   }
 }
 
@@ -113,8 +134,11 @@ img {
   .navbar__logo {
     margin-left: 20px;
   }
-  .navbar__info {
-    margin-right: 20px;
+  .navbar__contacts {
+    margin-right: 10px;
+  }
+  .navbar__phone {
+    font-size: 12px;
   }
   .navbar__button {
     font-size: 12px;
@@ -176,7 +200,7 @@ img {
   background-color: #e2b054;
 }
 
-.about .price td caption {
+.about .price caption {
   margin-top: 20px;
   margin-bottom: 20px;
   line-height: 30px;
@@ -321,6 +345,12 @@ img {
   font-style: normal;
 }
 
+@media (max-width: 400px) {
+  .quote .quote__item {
+    font-size: 16px;
+  }
+}
+
 .footer {
   background-color: #ff7f00;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -341,6 +371,7 @@ img {
 
 .footer-block p {
   padding: 0 20px 0 20px;
+  font-family: 'Lato', sans-serif;
   text-align: center;
 }
 /*# sourceMappingURL=style_valera.css.map */

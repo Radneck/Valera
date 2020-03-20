@@ -4,45 +4,48 @@
     <meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="./css/normalize.css">
-		<!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+		<link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/style_valera.css">
-    <title>Valera - Бережная эвакуация вашего авто.</title>
+    <title>Valera - Бережная эвакуация Вашего авто.</title>
 </head>
 <body>
-	<header class="navbar">
+	<header class="navbar wow bounceInDown">
 		<div class="my_container">
 			<div class="navbar-block">
 
 				<div class="navbar__logo">
-					<img src="./img/Logo_gazzelle_nobg.png" alt="Логотип">
+					<img src="./img/Gezzelle_logo_fin.png" alt="Логотип">
 				</div>
 
 				<div class="navbar__info">
 					<div class="navbar__contacts">
 						<span class="navbar__address">МО, Кокошкино, Апрелевка, Крекшино</span>
-						<a href="tel: +7(916)167-15-99" class="navbar__phone">+7(916)167-15-99</a>
+						<div class="navbar__phones">
+							<a href="tel: +7(916)167-15-99" class="navbar__phone">+7(916)167-15-99</a>
+							<a href="tel: +7(906)740-60-03" class="navbar__phone">+7(906)740-60-03</a>
+						</div>
 					</div>
 					
-					<button class="button navbar__button">Оставьте заявку</button>
+					<!-- <button class="button navbar__button">Оставьте заявку</button> -->
 				</div>
 			</div>
 		</div>
 	</header>
 
-	<section class="quote">
+	<section data-wow-delay="0.6s" class="quote wow zoomIn">
 		<div class="my_container">
 			<blockquote class="quote-block">
-				<p class="quote__item">Валера, настало твое время!</p>
-				<footer class="quote__footer">— <cite>Павлик</cite></footer>
+				<p class="quote__item">Приду на помощь 24/7</p>
+				<footer class="quote__footer">— <cite>Валера</cite></footer>
 			</blockquote>
 		</div>
 	</section>
 
 	<section class="about">
 		<div class="my_container">
-			<div class="about-block">
+			<div class="about-block wow zoomIn">
 
-				<div class="price">
+				<div data-wow-delay="0.2s" class="price wow bounceInLeft">
 
 					<table class="price-list">
 						<caption>Тарифы для МСК и МО</caption>
@@ -67,7 +70,7 @@
 						</tbody>
 					</table>
 				</div>
-				<div class="map">
+				<div data-wow-delay="0.5s" class="map wow bounceInRight">
 					<script type="text/javascript" charset="utf-8" async
 						src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9db8809e95337a6fb477088687a3dd39d3f511cec59371128f0403b9b998a5aa&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false">
 						</script>
@@ -78,17 +81,17 @@
 
 	</section>
 
-	<section class="quote">
+	<section data-wow-delay="0.6s" class="quote wow zoomIn">
 		<div class="my_container">
 			<blockquote class="quote-block">
-				<p class="quote__item">Приду на помощь 24/7</p>
-				<footer class="quote__footer">— <cite>Валера</cite></footer>
+				<p class="quote__item">Валера, настало твое время!</p>
+				<footer class="quote__footer">— <cite>Павлик</cite></footer>
 			</blockquote>
 		</div>
 	</section>
 
 
-	<section class="foto">
+	<section class="foto wow lightSpeedIn">
 		<div class="my_container">
 			<article class="foto-list">
 				<img class="foto__item" src="./img/Tru/1.jpeg" alt="Случаи из жизни">
@@ -100,7 +103,7 @@
 		</div>
 	</section>
 	
-	<footer class="footer">
+	<footer class="footer wow bounceInUp">
 		<div class="my_container">
 			<div class="footer-block">
 				<p>© Valeras site | Images: Valera | Design: Ognyana Biryuza</p>
@@ -111,5 +114,10 @@
 
 		</div>
 	</footer>
+	<script src="./js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+
 </body>
 </html>
