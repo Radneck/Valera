@@ -14,6 +14,10 @@
 	&__info
 		display: flex
 		align-items: center
+		padding-left: 50px
+		background-image: url('../img/headphone.png')
+		background-repeat: no-repeat
+		
 	&__contacts
 		// margin-right: 20px
 		display: flex
@@ -24,6 +28,9 @@
 		font-size: 16px
 		margin-bottom: 5px
 		font-family: 'Lato', sans-serif
+	&__phones
+		display: flex
+		// flex-direction: column
 	&__phone
 		&:nth-child(1)
 			padding-right: 30px
@@ -34,15 +41,20 @@
 		font-family: 'Lato', sans-serif
 	
 
-@media ( max-width:  960px)
+@media ( max-width:  980px)
 	.navbar
 		&__logo
-			margin-left: 20px		
+			margin-left: 20px
+		&__info
+			margin-right: 20px
+				
 
 @media ( max-width:  768px)
 	.navbar
 		&__logo
 			width: 20%
+		&__info
+			background-image: none
 		&__address
 			display: none
 @media ( max-width:  545px)
@@ -55,16 +67,21 @@
 @media ( max-width:  445px)
 	.navbar
 		&__logo
-			margin-left: 20px
-		&__info
-			// margin-right: 20px
+			margin-left: 20px 
 		&__contacts
 			margin-right: 10px
 		&__phone
 			font-size: 12px
 		&__button
 			font-size: 12px
-@media ( max-width:  427px)
+@media ( max-width:  410px)
 	.navbar
-		&__button
-			padding: 5px 10px
+		&__info
+			padding-left: 10px
+			margin-right: 10px
+		&__phones
+			font-size: 10px
+		&__phone
+			&:nth-child(1)
+				padding-right: 10px
+		
