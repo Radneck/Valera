@@ -60,7 +60,8 @@ img {
   display: flex;
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 200px;
+  max-width: 200px;
+  max-height: 50px;
 }
 
 .navbar__info {
@@ -153,7 +154,7 @@ img {
     margin-right: 10px;
   }
   .navbar__phone {
-    font-size: 12px;
+    font-size: 11px;
   }
   .navbar__button {
     font-size: 12px;
@@ -164,9 +165,6 @@ img {
   .navbar__info {
     padding-left: 10px;
     margin-right: 10px;
-  }
-  .navbar__phones {
-    font-size: 10px;
   }
   .navbar__phone:nth-child(1) {
     padding-right: 10px;
@@ -305,7 +303,8 @@ img {
 .foto__item {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  width: 220px;
+  max-width: 220px;
+  max-height: 340px;
   margin-bottom: 20px;
 }
 

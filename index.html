@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="./css/normalize.css">
 		<link rel="stylesheet" href="./css/animate.css">
+		<link rel="stylesheet" href="./css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./css/style_valera.css">
     <title>Valera - Бережная эвакуация Вашего авто.</title>
 </head>
@@ -94,11 +95,21 @@
 	<section class="foto wow lightSpeedIn">
 		<div class="my_container">
 			<article class="foto-list">
-				<img class="foto__item" src="./img/Tru/1.jpeg" alt="Случаи из жизни">
-				<img class="foto__item" src="./img/Tru/4.jpeg" alt="Случаи из жизни">
-				<img class="foto__item" src="./img/Tru/3.jpeg" alt="Случаи из жизни">
-				<img class="foto__item" src="./img/Tru/2.jpeg" alt="Случаи из жизни">
-				<img class="foto__item"src="./img/Tru/5.jpeg" alt="Случаи из жизни">
+				<a data-fancybox="gallery" href="./img/Tru/1.jpg">
+					<img class="foto__item" src="./img/Tru/Thumbs/1_small.jpg" alt="Случаи из жизни">
+				</a>
+				<a data-fancybox="gallery" href="./img/Tru/4.jpg">
+					<img class="foto__item" src="./img/Tru/Thumbs/4_small.jpg" alt="Случаи из жизни">
+				</a>
+				<a data-fancybox="gallery" href="./img/Tru/3.jpg">
+					<img class="foto__item" src="./img/Tru/Thumbs/3_small.jpg" alt="Случаи из жизни">
+				</a>
+				<a data-fancybox="gallery" href="./img/Tru/2.jpg">
+					<img class="foto__item" src="./img/Tru/Thumbs/2_small.jpg" alt="Случаи из жизни">
+				</a>
+				<a data-fancybox="gallery" href="./img/Tru/5.jpg">
+					<img class="foto__item" src="./img/Tru/Thumbs/5_small.jpg" alt="Случаи из жизни">
+				</a>
 			</article>
 		</div>
 	</section>
@@ -115,6 +126,9 @@
 	<script>
 		new WOW().init();
 	</script>
+	<script src="./js/jquery-3.4.1.min.js"></script>
+	<script src="./js/jquery.fancybox.min.js"></script>
+	<script src="./js/main_valera.js"></script>
 
 </body>
 </html>
